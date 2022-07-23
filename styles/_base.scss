@@ -13,8 +13,8 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: $black;
-  color: $white;
+  background: $white;
+  color: $black;
   cursor: default;
   font-family: 'Roboto Mono', monospace;
 }
@@ -45,6 +45,6 @@ p, a {
 p, a, span, button {
   &::selection {
     background: $black;
-    color: $blue;
+    color: $white;
   }
 }
