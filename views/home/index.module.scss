@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  border-bottom: 1px solid $black;
 
   .box{
     width: 80%;
@@ -20,6 +19,10 @@
     justify-content: space-between;
     user-select: none;
 
+    @media (max-width: 768px){
+      height: 60%;
+    }
+
     .text{
       .header{
         color: $white;
@@ -28,6 +31,11 @@
         font-weight: bold;
         text-align: justify;
         text-transform: uppercase;
+
+        @media (max-width: 768px){
+          font-size: 4rem;
+          line-height: 50px;
+        }
       }
     }
 
@@ -96,7 +104,8 @@
       background: $black;
       width: 500px;
       height: 600px;
-      border-radius: 16px;
+      // border-radius: 16px;
+      padding: 20px;
 
       &--first{
         transform: rotate(-5deg);

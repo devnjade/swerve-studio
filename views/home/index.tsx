@@ -29,16 +29,31 @@ const HomeView: React.FC = () => {
             <Image 
               src="https://res.cloudinary.com/dudhmrdin/image/upload/v1636919264/image_9_zc7up5.png" 
               alt="mock"
-              style={{
-                width: '100%',
-              }}
+              width={`100%`}
+              height={`100%`}
+              layout="responsive"
+              objectFit="cover"
             />
           </div>
           <div className={`${styles.card} ${styles['card--second']}`}>
-
+            <Image 
+              src="https://res.cloudinary.com/dudhmrdin/image/upload/v1636919264/image_9_zc7up5.png" 
+              alt="mock"
+              width={`100%`}
+              height={`100%`}
+              layout="responsive"
+              objectFit="cover"
+            />
           </div>
           <div className={`${styles.card} ${styles['card--third']}`}>
-
+            <Image 
+              src="https://res.cloudinary.com/dudhmrdin/image/upload/v1636919264/image_9_zc7up5.png" 
+              alt="mock"
+              width={`100%`}
+              height={`100%`}
+              layout="responsive"
+              objectFit="cover"
+            />
           </div>
         </div>
       </section>
