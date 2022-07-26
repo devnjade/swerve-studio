@@ -19,7 +19,7 @@ const HomeView: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className={styles.action}>
+      {/* <section className={styles.action}>
         <div className={styles.wrap}>
           <p>✴︎lets help you build what&rsquo;s on your mind and push, idealize, bring to realizm your inner imagination to a digital world✴︎</p>
           <p>✴︎We at swerve do a range of things digitally, from web, mobile, vr, ar, xr, game development and also web3!✴︎</p>
@@ -56,7 +56,7 @@ const HomeView: React.FC = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </Layout>
   )
 }
