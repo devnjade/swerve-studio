@@ -1,0 +1,13 @@
+@import 'styles/variables';
+
+.wrapper{
+  position: relative;
+
+  .main {
+    max-width: 1440px;
+    margin: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    // margin-top: calc($header-height + 0px);
+  }
+}

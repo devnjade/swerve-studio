@@ -1,1 +1,115 @@
 @import 'styles/variables';
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  border-bottom: 1px solid $black;
+
+  .box{
+    width: 80%;
+    height: 70%;
+    background-color: $black;
+    transform: rotate(2deg);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    user-select: none;
+
+    .text{
+      .header{
+        color: $white;
+        font-size: 8rem;
+        line-height: 110px;
+        font-weight: bold;
+        text-align: justify;
+        text-transform: uppercase;
+      }
+    }
+
+    .links{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        gap: 24px;
+        padding: 4px 20px;
+        color: $white;
+        opacity: .3;
+        transition: background-color .8s ease-in-out;
+
+        &:hover{
+          background-color: $white;
+          color: $black;
+          opacity: 1;
+        }
+
+        span{
+          text-transform: uppercase;
+          letter-spacing: -0.1rem;
+          line-height: normal;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.action{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-bottom: 1px solid $black;
+  overflow: hidden;
+  position: relative;
+  justify-content: space-between;
+
+  .wrap{
+    margin-top: 100px;
+
+    p{
+      font-size: 2.5rem;
+      letter-spacing: -0.2rem;
+      text-transform: uppercase;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+  }
+
+  .cards{
+    margin-bottom: -10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+
+    .card{
+      background: $black;
+      width: 500px;
+      height: 600px;
+      border-radius: 16px;
+
+      &--first{
+        transform: rotate(-5deg);
+        margin-bottom: -3%;
+      }
+
+      &--second{
+      }
+
+      &--third{
+        transform: rotate(5deg);
+        margin-bottom: -3%;
+      }
+    }
+  }
+}
